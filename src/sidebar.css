@@ -1,0 +1,78 @@
+/* sidebar.css */
+
+/* Sticky sidebar with full height */
+.ps-sidebar-root {
+    position: sticky !important;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border: 0 !important;
+    background-color: #1F2A40 !important;
+    /* Same as colors.primary[400] */
+}
+
+/* Sidebar menu items */
+.ps-menu-root {
+    color: #E0E0E0 !important;
+    /* colors.grey[100] */
+}
+
+/* Sidebar menu item spacing */
+.ps-menu-button {
+    padding: 5px 35px 5px 20px !important;
+}
+
+/* Hover effect for menu items */
+.ps-menu-button:hover {
+    color: #868dfb !important;
+    /* Hover color */
+}
+
+/* Active menu item */
+.ps-menu-button.ps-active {
+    color: #6870fa !important;
+    /* Active menu item color */
+}
+
+/* Sidebar icons */
+.ps-menu-icon {
+    background-color: transparent !important;
+}
+
+/* Submenu styling */
+.ps-submenu-content {
+    color: black !important;
+    background-color: red !important;
+}
+
+/* Collapsed sidebar menu item alignment */
+.ps-sidebar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile section */
+.sidebar-profile {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sidebar-profile img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.sidebar-profile h2 {
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    color: #E0E0E0 !important;
+    /* colors.grey[100] */
+}
+
+.sidebar-profile h5 {
+    color: #4CAF50 !important;
+    /* colors.greenAccent[500] */
+}

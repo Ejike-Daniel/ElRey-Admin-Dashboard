@@ -1,7 +1,7 @@
 import React from "react";
 
-const Geography = () => {
+const PieChart = () => {
   return <div></div>;
 };
 
-export default Geography;
+export default PieChart;

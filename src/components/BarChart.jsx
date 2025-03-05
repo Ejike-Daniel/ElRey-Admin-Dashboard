@@ -1,7 +1,7 @@
 import React from "react";
 
-const Line = () => {
+const BarChart = () => {
   return <div></div>;
 };
 
-export default Line;
+export default BarChart;

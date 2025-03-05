@@ -1,7 +1,7 @@
 import React from "react";
 
-const Pie = () => {
+const LineChart = () => {
   return <div></div>;
 };
 
-export default Pie;
+export default LineChart;

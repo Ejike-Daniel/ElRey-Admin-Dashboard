@@ -36,7 +36,7 @@ function App() {
               <Route path="/geography" element={<Geography />} />
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/form" element={<Form />} />
-              <Route path="/form" element={<FAQ />} />
+              <Route path="/faq" element={<FAQ />} />
               <Route path="/contacts" element={<Contacts />} />
             </Routes>
           </main>

@@ -6,6 +6,7 @@ import { tokens } from "../theme";
 const PieChart = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+
   return (
     <ResponsivePie
       data={data}
@@ -24,7 +25,6 @@ const PieChart = () => {
           ticks: {
             line: {
               stroke: colors.grey[100],
-              scrollbarWidth: 1,
             },
             text: {
               fill: colors.grey[100],
@@ -62,7 +62,7 @@ const PieChart = () => {
           id: "dots",
           type: "patternDots",
           background: "inherit",
-          color: "rgba(255, 255, 255, 0.3)",
+          color: colors.grey[300], // Use theme-based colors
           size: 4,
           padding: 1,
           stagger: true,
@@ -71,7 +71,7 @@ const PieChart = () => {
           id: "lines",
           type: "patternLines",
           background: "inherit",
-          color: "rgba(255, 255, 255, 0.3)",
+          color: colors.grey[300], // Use theme-based colors
           rotation: -45,
           lineWidth: 6,
           spacing: 10,
@@ -87,7 +87,7 @@ const PieChart = () => {
           itemsSpacing: 0,
           itemWidth: 100,
           itemHeight: 18,
-          itemTextColor: "#999",
+          itemTextColor: colors.grey[100], // Theme-based color
           itemDirection: "left-to-right",
           itemOpacity: 1,
           symbolSize: 18,
@@ -96,7 +96,7 @@ const PieChart = () => {
             {
               on: "hover",
               style: {
-                itemTextColor: "#000",
+                itemTextColor: colors.greenAccent[400], // Adjust hover color
               },
             },
           ],
